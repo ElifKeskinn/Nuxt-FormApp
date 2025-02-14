@@ -10,4 +10,17 @@ export default defineNuxtConfig({
     strict: true,
   },
   css: ['@/assets/tailwind.css'],
+  
+  // Vite Konfigürasyonu
+  vite: {
+    server: {
+      allowedHosts: ['basvuru.sanaltornacilar.com'],
+      strictPort: true
+    }
+  },
+
+  // Nitro Sunucu Konfigürasyonu
+  nitro: {
+    preset: 'node',
+  }
 });
